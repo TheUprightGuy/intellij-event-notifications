@@ -1,0 +1,25 @@
+/nbproject/private/
+/bin/
+*.project
+/.classpath
+*.settings/
+/.idea/
+/.vscode/
+*.iml
+**/logs
+**/*.log
+
+**/node_modules
+**/dist
+
+# ignore local history files
+.history 
+
+# Ignore Gradle project-specific cache directory
+.gradle/
+
+# Ignore Gradle build output directory
+build/
+*/build/
+*/out/
+*/target/
