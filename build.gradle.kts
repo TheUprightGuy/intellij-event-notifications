@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "nz.co.jbelton"
-version = "1.0-SNAPSHOT"
+version = "0.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -15,8 +15,6 @@ repositories {
 intellij {
     version.set("2022.1.1")
     type.set("IU") // Target IDE Platform
-
-    plugins.set(listOf("com.intellij.javafx:1.0.4"))
 }
 
 tasks {

@@ -3,11 +3,11 @@ package nz.co.jbelton.eventnotifications.listeners
 import com.intellij.execution.ExecutionListener
 import com.intellij.execution.process.ProcessHandler
 import com.intellij.execution.runners.ExecutionEnvironment
-import nz.co.jbelton.eventnotifications.controllers.SoundController
+import nz.co.jbelton.eventnotifications.services.SoundsService
 
 class RunsListener() : ExecutionListener {
 
-    var soundController: SoundController = SoundController()
+    var soundController: SoundsService = SoundsService()
 
     override fun processStarted(
         executorId: String,

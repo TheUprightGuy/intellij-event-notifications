@@ -8,7 +8,7 @@
     <name>Event-Notifications</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">JBelton</vendor>
+    <vendor email="jack.belton@hotmail.com" url="https://github.com/TheUprightGuy">JBelton</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
@@ -25,7 +25,12 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <applicationService serviceImplementation="nz.co.jbelton.eventnotifications.data.AppSettingsState"/>
+        <applicationConfigurable
+                parentId="tools"
+                instance="nz.co.jbelton.eventnotifications.services.AppSettingsConfigurable"
+                id="org.intellij.sdk.settings.AppSettingsConfigurable"
+                displayName="Event Notifications"/>
     </extensions>
     
     <projectListeners>

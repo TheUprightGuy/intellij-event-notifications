@@ -1,10 +1,6 @@
-package nz.co.jbelton.eventnotifications.controllers
+package nz.co.jbelton.eventnotifications.services
 
-import javafx.scene.media.Media
-import javafx.scene.media.MediaPlayer
 import java.io.File
-import javax.sound.sampled.AudioFileFormat
-import javax.sound.sampled.AudioFormat
 import javax.sound.sampled.AudioInputStream
 import javax.sound.sampled.AudioSystem
 import javax.sound.sampled.Clip
@@ -12,7 +8,7 @@ import javax.sound.sampled.DataLine
 import javax.sound.sampled.LineEvent
 import javax.sound.sampled.LineListener
 
-class SoundController : LineListener {
+class SoundsService : LineListener {
 
     private lateinit var audioClip: Clip
     private lateinit var audioInputStream: AudioInputStream
